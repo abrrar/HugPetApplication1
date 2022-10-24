@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//bhnh
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -14,6 +14,8 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Text("Hello, world!")
+
         }
         .padding()
     }
