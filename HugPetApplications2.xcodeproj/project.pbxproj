@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24487C1B2906E66F00C01375 /* Packages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24487C1A2906E66F00C01375 /* Packages.swift */; };
 		A097D06F2906DFD000DE9D8E /* order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A097D06E2906DFD000DE9D8E /* order.swift */; };
 		A0E56E122906D8130054301F /* HugPetApplications2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E112906D8130054301F /* HugPetApplications2App.swift */; };
 		A0E56E142906D8130054301F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E132906D8130054301F /* ContentView.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24487C1A2906E66F00C01375 /* Packages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Packages.swift; sourceTree = "<group>"; };
 		A097D06E2906DFD000DE9D8E /* order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = order.swift; sourceTree = "<group>"; };
 		A0E56E0E2906D8130054301F /* HugPetApplications2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HugPetApplications2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E56E112906D8130054301F /* HugPetApplications2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPetApplications2App.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				A0E56E112906D8130054301F /* HugPetApplications2App.swift */,
 				A0E56E132906D8130054301F /* ContentView.swift */,
 				A097D06E2906DFD000DE9D8E /* order.swift */,
+				24487C1A2906E66F00C01375 /* Packages.swift */,
 				A0E56E152906D8150054301F /* Assets.xcassets */,
 				A0E56E172906D8150054301F /* Preview Content */,
 			);
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24487C1B2906E66F00C01375 /* Packages.swift in Sources */,
 				A097D06F2906DFD000DE9D8E /* order.swift in Sources */,
 				A0E56E142906D8130054301F /* ContentView.swift in Sources */,
 				A0E56E122906D8130054301F /* HugPetApplications2App.swift in Sources */,
