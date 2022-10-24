@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Packages: View {
+struct PackagesView: View {
     var body: some View {
         Text("Hello ")
             .foregroundColor(.yellow)
@@ -16,6 +16,6 @@ struct Packages: View {
 
 struct Packages_Previews: PreviewProvider {
     static var previews: some View {
-        Packages()
+        PackagesView()
     }
 }
