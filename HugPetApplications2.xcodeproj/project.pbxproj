@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		24487C212907126E00C01375 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24487C202907126E00C01375 /* GoogleService-Info.plist */; };
 		A0485E4029071FDF007E0639 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0485E3F29071FDF007E0639 /* Services.swift */; };
-		A0485E4429072064007E0639 /* ServicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0485E4329072064007E0639 /* ServicesViewModel.swift */; };
 		A0485E4629072390007E0639 /* PackagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0485E4529072390007E0639 /* PackagesView.swift */; };
 		A0485E492907246B007E0639 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A0485E482907246B007E0639 /* FirebaseAuth */; };
 		A0485E4B2907246B007E0639 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A0485E4A2907246B007E0639 /* FirebaseFirestore */; };
@@ -18,6 +17,7 @@
 		A0485E512907246B007E0639 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A0485E502907246B007E0639 /* FirebaseStorage */; };
 		A0485E5529072DD8007E0639 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0485E5429072DD8007E0639 /* Pet.swift */; };
 		A0485E5729072F12007E0639 /* Packages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0485E5629072F12007E0639 /* Packages.swift */; };
+		A0485E5929073D3A007E0639 /* ServicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0485E5829073D3A007E0639 /* ServicesViewModel.swift */; };
 		A097D06F2906DFD000DE9D8E /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A097D06E2906DFD000DE9D8E /* OrderView.swift */; };
 		A0E56E122906D8130054301F /* HugPetApplications2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E112906D8130054301F /* HugPetApplications2App.swift */; };
 		A0E56E142906D8130054301F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E132906D8130054301F /* ContentView.swift */; };
@@ -48,10 +48,10 @@
 /* Begin PBXFileReference section */
 		24487C202907126E00C01375 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A0485E3F29071FDF007E0639 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
-		A0485E4329072064007E0639 /* ServicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ServicesViewModel.swift; path = HugPetApplications2/ServicesViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A0485E4529072390007E0639 /* PackagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PackagesView.swift; path = ../PackagesView.swift; sourceTree = "<group>"; };
 		A0485E5429072DD8007E0639 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		A0485E5629072F12007E0639 /* Packages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Packages.swift; sourceTree = "<group>"; };
+		A0485E5829073D3A007E0639 /* ServicesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesViewModel.swift; sourceTree = "<group>"; };
 		A097D06E2906DFD000DE9D8E /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		A0E56E0E2906D8130054301F /* HugPetApplications2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HugPetApplications2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E56E112906D8130054301F /* HugPetApplications2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPetApplications2App.swift; sourceTree = "<group>"; };
@@ -99,17 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				24487C222907135900C01375 /* TabBarView */,
-				24487C1F2907113100C01375 /* PhoneAuth */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		24487C1D2907112100C01375 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A0485E4329072064007E0639 /* ServicesViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		24487C1E2907112800C01375 /* Model */ = {
@@ -120,13 +111,6 @@
 				A0485E5629072F12007E0639 /* Packages.swift */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		24487C1F2907113100C01375 /* PhoneAuth */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PhoneAuth;
 			sourceTree = "<group>";
 		};
 		24487C222907135900C01375 /* TabBarView */ = {
@@ -163,8 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				A0E56E112906D8130054301F /* HugPetApplications2App.swift */,
+				A0485E5829073D3A007E0639 /* ServicesViewModel.swift */,
 				24487C1E2907112800C01375 /* Model */,
-				24487C1D2907112100C01375 /* ViewModel */,
 				24487C1C2907110F00C01375 /* Views */,
 				A0E56E152906D8150054301F /* Assets.xcassets */,
 				24487C202907126E00C01375 /* GoogleService-Info.plist */,
@@ -341,8 +325,8 @@
 			files = (
 				A0485E5729072F12007E0639 /* Packages.swift in Sources */,
 				A0485E5529072DD8007E0639 /* Pet.swift in Sources */,
+				A0485E5929073D3A007E0639 /* ServicesViewModel.swift in Sources */,
 				A097D06F2906DFD000DE9D8E /* OrderView.swift in Sources */,
-				A0485E4429072064007E0639 /* ServicesViewModel.swift in Sources */,
 				A0485E4029071FDF007E0639 /* Services.swift in Sources */,
 				A0E56E142906D8130054301F /* ContentView.swift in Sources */,
 				A0E56E122906D8130054301F /* HugPetApplications2App.swift in Sources */,
