@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24487C1B2906E66F00C01375 /* Packages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24487C1A2906E66F00C01375 /* Packages.swift */; };
-		A097D06F2906DFD000DE9D8E /* order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A097D06E2906DFD000DE9D8E /* order.swift */; };
+		24487C1B2906E66F00C01375 /* PackagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24487C1A2906E66F00C01375 /* PackagesView.swift */; };
+		24487C212907126E00C01375 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24487C202907126E00C01375 /* GoogleService-Info.plist */; };
+		A097D06F2906DFD000DE9D8E /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A097D06E2906DFD000DE9D8E /* OrderView.swift */; };
 		A0E56E122906D8130054301F /* HugPetApplications2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E112906D8130054301F /* HugPetApplications2App.swift */; };
 		A0E56E142906D8130054301F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E132906D8130054301F /* ContentView.swift */; };
 		A0E56E162906D8150054301F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E56E152906D8150054301F /* Assets.xcassets */; };
@@ -36,8 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24487C1A2906E66F00C01375 /* Packages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Packages.swift; sourceTree = "<group>"; };
-		A097D06E2906DFD000DE9D8E /* order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = order.swift; sourceTree = "<group>"; };
+		24487C1A2906E66F00C01375 /* PackagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesView.swift; sourceTree = "<group>"; };
+		24487C202907126E00C01375 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A097D06E2906DFD000DE9D8E /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		A0E56E0E2906D8130054301F /* HugPetApplications2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HugPetApplications2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E56E112906D8130054301F /* HugPetApplications2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPetApplications2App.swift; sourceTree = "<group>"; };
 		A0E56E132906D8130054301F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24487C1C2907110F00C01375 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24487C222907135900C01375 /* TabBarView */,
+				24487C1F2907113100C01375 /* PhoneAuth */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24487C1D2907112100C01375 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		24487C1E2907112800C01375 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24487C1F2907113100C01375 /* PhoneAuth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhoneAuth;
+			sourceTree = "<group>";
+		};
+		24487C222907135900C01375 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				A0E56E132906D8130054301F /* ContentView.swift */,
+				A097D06E2906DFD000DE9D8E /* OrderView.swift */,
+				24487C1A2906E66F00C01375 /* PackagesView.swift */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
 		A0E56E052906D8130054301F = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +141,11 @@
 			isa = PBXGroup;
 			children = (
 				A0E56E112906D8130054301F /* HugPetApplications2App.swift */,
-				A0E56E132906D8130054301F /* ContentView.swift */,
-				A097D06E2906DFD000DE9D8E /* order.swift */,
-				24487C1A2906E66F00C01375 /* Packages.swift */,
+				24487C1E2907112800C01375 /* Model */,
+				24487C1D2907112100C01375 /* ViewModel */,
+				24487C1C2907110F00C01375 /* Views */,
 				A0E56E152906D8150054301F /* Assets.xcassets */,
+				24487C202907126E00C01375 /* GoogleService-Info.plist */,
 				A0E56E172906D8150054301F /* Preview Content */,
 			);
 			path = HugPetApplications2;
@@ -239,6 +282,7 @@
 			files = (
 				A0E56E192906D8150054301F /* Preview Assets.xcassets in Resources */,
 				A0E56E162906D8150054301F /* Assets.xcassets in Resources */,
+				24487C212907126E00C01375 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24487C1B2906E66F00C01375 /* Packages.swift in Sources */,
-				A097D06F2906DFD000DE9D8E /* order.swift in Sources */,
+				24487C1B2906E66F00C01375 /* PackagesView.swift in Sources */,
+				A097D06F2906DFD000DE9D8E /* OrderView.swift in Sources */,
 				A0E56E142906D8130054301F /* ContentView.swift in Sources */,
 				A0E56E122906D8130054301F /* HugPetApplications2App.swift in Sources */,
 			);
@@ -339,6 +383,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -399,6 +444,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -425,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HugPetApplications2/Preview Content\"";
+				DEVELOPMENT_TEAM = XHRHNUK47B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -453,6 +500,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HugPetApplications2/Preview Content\"";
+				DEVELOPMENT_TEAM = XHRHNUK47B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
