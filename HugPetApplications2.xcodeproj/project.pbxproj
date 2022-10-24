@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0E56E122906D8130054301F /* HugPetApplications2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E112906D8130054301F /* HugPetApplications2App.swift */; };
+		A0E56E142906D8130054301F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E132906D8130054301F /* ContentView.swift */; };
+		A0E56E162906D8150054301F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E56E152906D8150054301F /* Assets.xcassets */; };
+		A0E56E192906D8150054301F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E56E182906D8150054301F /* Preview Assets.xcassets */; };
+		A0E56E232906D8150054301F /* HugPetApplications2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E222906D8150054301F /* HugPetApplications2Tests.swift */; };
+		A0E56E2D2906D8150054301F /* HugPetApplications2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E2C2906D8150054301F /* HugPetApplications2UITests.swift */; };
+		A0E56E2F2906D8150054301F /* HugPetApplications2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E2E2906D8150054301F /* HugPetApplications2UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0E56E1F2906D8150054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0E56E062906D8130054301F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0E56E0D2906D8130054301F;
+			remoteInfo = HugPetApplications2;
+		};
+		A0E56E292906D8150054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0E56E062906D8130054301F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0E56E0D2906D8130054301F;
+			remoteInfo = HugPetApplications2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0E56E0E2906D8130054301F /* HugPetApplications2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HugPetApplications2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E56E112906D8130054301F /* HugPetApplications2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPetApplications2App.swift; sourceTree = "<group>"; };
+		A0E56E132906D8130054301F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A0E56E152906D8150054301F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0E56E182906D8150054301F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0E56E1E2906D8150054301F /* HugPetApplications2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HugPetApplications2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E56E222906D8150054301F /* HugPetApplications2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPetApplications2Tests.swift; sourceTree = "<group>"; };
+		A0E56E282906D8150054301F /* HugPetApplications2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HugPetApplications2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E56E2C2906D8150054301F /* HugPetApplications2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPetApplications2UITests.swift; sourceTree = "<group>"; };
+		A0E56E2E2906D8150054301F /* HugPetApplications2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPetApplications2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0E56E0B2906D8130054301F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E56E1B2906D8150054301F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E56E252906D8150054301F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0E56E052906D8130054301F = {
+			isa = PBXGroup;
+			children = (
+				A0E56E102906D8130054301F /* HugPetApplications2 */,
+				A0E56E212906D8150054301F /* HugPetApplications2Tests */,
+				A0E56E2B2906D8150054301F /* HugPetApplications2UITests */,
+				A0E56E0F2906D8130054301F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0E56E0F2906D8130054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0E56E0E2906D8130054301F /* HugPetApplications2.app */,
+				A0E56E1E2906D8150054301F /* HugPetApplications2Tests.xctest */,
+				A0E56E282906D8150054301F /* HugPetApplications2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0E56E102906D8130054301F /* HugPetApplications2 */ = {
+			isa = PBXGroup;
+			children = (
+				A0E56E112906D8130054301F /* HugPetApplications2App.swift */,
+				A0E56E132906D8130054301F /* ContentView.swift */,
+				A0E56E152906D8150054301F /* Assets.xcassets */,
+				A0E56E172906D8150054301F /* Preview Content */,
+			);
+			path = HugPetApplications2;
+			sourceTree = "<group>";
+		};
+		A0E56E172906D8150054301F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A0E56E182906D8150054301F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0E56E212906D8150054301F /* HugPetApplications2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A0E56E222906D8150054301F /* HugPetApplications2Tests.swift */,
+			);
+			path = HugPetApplications2Tests;
+			sourceTree = "<group>";
+		};
+		A0E56E2B2906D8150054301F /* HugPetApplications2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0E56E2C2906D8150054301F /* HugPetApplications2UITests.swift */,
+				A0E56E2E2906D8150054301F /* HugPetApplications2UITestsLaunchTests.swift */,
+			);
+			path = HugPetApplications2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0E56E0D2906D8130054301F /* HugPetApplications2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0E56E322906D8150054301F /* Build configuration list for PBXNativeTarget "HugPetApplications2" */;
+			buildPhases = (
+				A0E56E0A2906D8130054301F /* Sources */,
+				A0E56E0B2906D8130054301F /* Frameworks */,
+				A0E56E0C2906D8130054301F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HugPetApplications2;
+			productName = HugPetApplications2;
+			productReference = A0E56E0E2906D8130054301F /* HugPetApplications2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0E56E1D2906D8150054301F /* HugPetApplications2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0E56E352906D8150054301F /* Build configuration list for PBXNativeTarget "HugPetApplications2Tests" */;
+			buildPhases = (
+				A0E56E1A2906D8150054301F /* Sources */,
+				A0E56E1B2906D8150054301F /* Frameworks */,
+				A0E56E1C2906D8150054301F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0E56E202906D8150054301F /* PBXTargetDependency */,
+			);
+			name = HugPetApplications2Tests;
+			productName = HugPetApplications2Tests;
+			productReference = A0E56E1E2906D8150054301F /* HugPetApplications2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0E56E272906D8150054301F /* HugPetApplications2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0E56E382906D8150054301F /* Build configuration list for PBXNativeTarget "HugPetApplications2UITests" */;
+			buildPhases = (
+				A0E56E242906D8150054301F /* Sources */,
+				A0E56E252906D8150054301F /* Frameworks */,
+				A0E56E262906D8150054301F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0E56E2A2906D8150054301F /* PBXTargetDependency */,
+			);
+			name = HugPetApplications2UITests;
+			productName = HugPetApplications2UITests;
+			productReference = A0E56E282906D8150054301F /* HugPetApplications2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0E56E062906D8130054301F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					A0E56E0D2906D8130054301F = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					A0E56E1D2906D8150054301F = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = A0E56E0D2906D8130054301F;
+					};
+					A0E56E272906D8150054301F = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = A0E56E0D2906D8130054301F;
+					};
+				};
+			};
+			buildConfigurationList = A0E56E092906D8130054301F /* Build configuration list for PBXProject "HugPetApplications2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0E56E052906D8130054301F;
+			productRefGroup = A0E56E0F2906D8130054301F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0E56E0D2906D8130054301F /* HugPetApplications2 */,
+				A0E56E1D2906D8150054301F /* HugPetApplications2Tests */,
+				A0E56E272906D8150054301F /* HugPetApplications2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0E56E0C2906D8130054301F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E56E192906D8150054301F /* Preview Assets.xcassets in Resources */,
+				A0E56E162906D8150054301F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E56E1C2906D8150054301F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E56E262906D8150054301F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0E56E0A2906D8130054301F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E56E142906D8130054301F /* ContentView.swift in Sources */,
+				A0E56E122906D8130054301F /* HugPetApplications2App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E56E1A2906D8150054301F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E56E232906D8150054301F /* HugPetApplications2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E56E242906D8150054301F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E56E2D2906D8150054301F /* HugPetApplications2UITests.swift in Sources */,
+				A0E56E2F2906D8150054301F /* HugPetApplications2UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0E56E202906D8150054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0E56E0D2906D8130054301F /* HugPetApplications2 */;
+			targetProxy = A0E56E1F2906D8150054301F /* PBXContainerItemProxy */;
+		};
+		A0E56E2A2906D8150054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0E56E0D2906D8130054301F /* HugPetApplications2 */;
+			targetProxy = A0E56E292906D8150054301F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A0E56E302906D8150054301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0E56E312906D8150054301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0E56E332906D8150054301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HugPetApplications2/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abrar.HugPetApplications2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0E56E342906D8150054301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HugPetApplications2/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abrar.HugPetApplications2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0E56E362906D8150054301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abrar.HugPetApplications2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HugPetApplications2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HugPetApplications2";
+			};
+			name = Debug;
+		};
+		A0E56E372906D8150054301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abrar.HugPetApplications2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HugPetApplications2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HugPetApplications2";
+			};
+			name = Release;
+		};
+		A0E56E392906D8150054301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abrar.HugPetApplications2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HugPetApplications2;
+			};
+			name = Debug;
+		};
+		A0E56E3A2906D8150054301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abrar.HugPetApplications2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HugPetApplications2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0E56E092906D8130054301F /* Build configuration list for PBXProject "HugPetApplications2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E56E302906D8150054301F /* Debug */,
+				A0E56E312906D8150054301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0E56E322906D8150054301F /* Build configuration list for PBXNativeTarget "HugPetApplications2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E56E332906D8150054301F /* Debug */,
+				A0E56E342906D8150054301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0E56E352906D8150054301F /* Build configuration list for PBXNativeTarget "HugPetApplications2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E56E362906D8150054301F /* Debug */,
+				A0E56E372906D8150054301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0E56E382906D8150054301F /* Build configuration list for PBXNativeTarget "HugPetApplications2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E56E392906D8150054301F /* Debug */,
+				A0E56E3A2906D8150054301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0E56E062906D8130054301F /* Project object */;
+}
