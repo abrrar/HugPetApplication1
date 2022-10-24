@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 enum TabPressed{
     case services
@@ -17,44 +18,49 @@ struct TabBarViews: View {
     @State var tabSelected : TabPressed = .services
 
     var body: some View {
-       
-        TabView(selection: $tabSelected){
+        if Auth.auth().currentUser != nil {
             
-            NavigationView { ServicesView()
-//                    .environmentObject(sharedData)
-            }
-            .tabItem{
-                Image(systemName: "pawprint.fill")
-                Text("Services")
-            }
-            .tag(TabPressed.services)
-            
-            
-            NavigationView{
-                OrderView()
-//                OrderView(package: Constant.packagesStruct , orderinfo: Constant.orderStruct, selectedDate: Date())
-//                    .environmentObject(sharedData)
-//                    .environmentObject(sho)
+            TabView(selection: $tabSelected){
                 
-            }
-            .tabItem {
-                Image(systemName: "bag.fill")
-                Text("Order")
+                NavigationView { ServicesView()
+                    //                    .environmentObject(sharedData)
+                }
+                .tabItem{
+                    Image(systemName: "pawprint.fill")
+                    Text("Services")
+                }
+                .tag(TabPressed.services)
                 
-            }
-            .tag(TabPressed.order)
-            
-//                NavigationView{
+                
+                NavigationView{
+                    OrderView()
+                    //                OrderView(package: Constant.packagesStruct , orderinfo: Constant.orderStruct, selectedDate: Date())
+                    //                    .environmentObject(sharedData)
+                    //                    .environmentObject(sho)
+                    
+                }
+                .tabItem {
+                    Image(systemName: "bag.fill")
+                    Text("Order")
+                    
+                }
+                .tag(TabPressed.order)
+                
+                //                NavigationView{
                 OrderList()
                 
-//                }
+                //                }
                     .tabItem {
                         Image(systemName: "doc.badge.plus")
                         Text("Order List")
                         
                     }
                     .tag(TabPressed.orderList)
-            
+                
+            }
+        } else {
+            PhoneAuthView()
+                .environmentObject(AuthManager())
         }
     }
 }

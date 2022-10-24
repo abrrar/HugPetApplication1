@@ -88,7 +88,9 @@ struct HugPetApplications2App: App {
 
     var body: some Scene {
         WindowGroup {
-            TabBarViews()
+//            TabBarViews()
+            PhoneAuthView()
+                .environmentObject(AuthManager())
         }
     }
 }

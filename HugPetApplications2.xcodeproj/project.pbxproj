@@ -17,6 +17,9 @@
 		24487C3129071CC600C01375 /* TabBarViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24487C3029071CC600C01375 /* TabBarViews.swift */; };
 		24487C3729071E0100C01375 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24487C3629071E0100C01375 /* ServicesView.swift */; };
 		24487C3929071E2500C01375 /* OrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24487C3829071E2500C01375 /* OrderList.swift */; };
+		24487C3B2907206800C01375 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24487C3A2907206800C01375 /* AuthManager.swift */; };
+		24487C3D2907209000C01375 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24487C3C2907209000C01375 /* User.swift */; };
+		24487C3F2907211600C01375 /* PhoneAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24487C3E2907211500C01375 /* PhoneAuthView.swift */; };
 		A097D06F2906DFD000DE9D8E /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A097D06E2906DFD000DE9D8E /* OrderView.swift */; };
 		A0E56E122906D8130054301F /* HugPetApplications2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E112906D8130054301F /* HugPetApplications2App.swift */; };
 		A0E56E142906D8130054301F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E132906D8130054301F /* ContentView.swift */; };
@@ -52,6 +55,9 @@
 		24487C3029071CC600C01375 /* TabBarViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViews.swift; sourceTree = "<group>"; };
 		24487C3629071E0100C01375 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
 		24487C3829071E2500C01375 /* OrderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderList.swift; sourceTree = "<group>"; };
+		24487C3A2907206800C01375 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		24487C3C2907209000C01375 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		24487C3E2907211500C01375 /* PhoneAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthView.swift; sourceTree = "<group>"; };
 		A097D06E2906DFD000DE9D8E /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		A0E56E0E2906D8130054301F /* HugPetApplications2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HugPetApplications2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E56E112906D8130054301F /* HugPetApplications2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPetApplications2App.swift; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 		24487C1D2907112100C01375 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				24487C3A2907206800C01375 /* AuthManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -114,6 +121,7 @@
 		24487C1E2907112800C01375 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				24487C3C2907209000C01375 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +129,7 @@
 		24487C1F2907113100C01375 /* PhoneAuth */ = {
 			isa = PBXGroup;
 			children = (
+				24487C3E2907211500C01375 /* PhoneAuthView.swift */,
 			);
 			path = PhoneAuth;
 			sourceTree = "<group>";
@@ -373,12 +382,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				24487C1B2906E66F00C01375 /* PackagesView.swift in Sources */,
+				24487C3B2907206800C01375 /* AuthManager.swift in Sources */,
 				24487C3929071E2500C01375 /* OrderList.swift in Sources */,
 				A097D06F2906DFD000DE9D8E /* OrderView.swift in Sources */,
 				24487C3729071E0100C01375 /* ServicesView.swift in Sources */,
+				24487C3D2907209000C01375 /* User.swift in Sources */,
 				A0E56E142906D8130054301F /* ContentView.swift in Sources */,
 				24487C3129071CC600C01375 /* TabBarViews.swift in Sources */,
 				A0E56E122906D8130054301F /* HugPetApplications2App.swift in Sources */,
+				24487C3F2907211600C01375 /* PhoneAuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
