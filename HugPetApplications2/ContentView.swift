@@ -17,10 +17,12 @@ struct ContentView: View {
             Text("Hello, world!")
             Text("Hello, world!")
             Text("Hello, world!")
-            Text("ADADADADADAD")
             Text("Hello, world!")
-                .foregroundColor(.blue)
-                
+            Text("Hello, world!")
+            
+            
+                .foregroundColor(.pink)
+
         }
         .padding()
     }
