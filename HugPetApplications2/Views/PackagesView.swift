@@ -9,10 +9,10 @@ import SwiftUI
 import Firebase
 import FirebaseFirestore
 import FirebaseFirestoreSwift
-import Nuke
-import NukeUI
-import Combine
-import NetworkImage
+//import Nuke
+//import NukeUI
+//import Combine
+//import NetworkImage
 
 
 struct ServicesView: View{
@@ -20,23 +20,23 @@ struct ServicesView: View{
     @State var pressedPet : PetTypes = .Dog
     @State var pressedService : servicesType = .shower
     
-    @StateObject var packageViewModel = PackagesViewModel()
+   // @StateObject var packageViewModel = PackagesViewModel()
     @StateObject var servicesViewModel = ServicesViewModel()
     
-    @EnvironmentObject var sharedData: SharedDataViewModel
+   // @EnvironmentObject var sharedData: SharedDataViewModel
     @State var showingDetalisPackage: Bool = false
     
-    @StateObject var PetModel = PetViewModel()
-    @EnvironmentObject var authManager : AuthManager
+   // @StateObject var PetModel = PetViewModel()
+   // @EnvironmentObject var authManager : AuthManager
     //    @StateObject var authName = AuthManager()
-    @ObservedObject var userManager = AuthManager()
+ //   @ObservedObject var userManager = AuthManager()
     @State var filterSearch = ""
     @ObservedObject var searchServices = ServicesViewModel()
     
-      @ObservedObject var firebasemanger: FirebaseManager = .shared
-    @State var selectedPet : PetInfo
-    @State var selectedPets : [PetInfo] = []
-    
+//      @ObservedObject var firebasemanger: FirebaseManager = .shared
+//    @State var selectedPet : PetInfo
+//    @State var selectedPets : [PetInfo] = []
+//
     
     var body: some View{
         
@@ -76,9 +76,9 @@ struct ServicesView: View{
                                     .font(.system(size: 12, weight: .semibold, design: .default))
                                 
                             }
-                            .foregroundColor(pressedPet == petType ? Color.backgroundGray : Color.black)
+                            .foregroundColor(pressedPet == petType ? Color.red : Color.black)
                             
-                            .background(pressedPet == petType ? Color(#colorLiteral(red: 0.2439258993, green: 0.2997204065, blue: 0.8384817243, alpha: 1)) : Color.backgroundGray)
+                            .background(pressedPet == petType ? Color(#colorLiteral(red: 0.2439258993, green: 0.2997204065, blue: 0.8384817243, alpha: 1)) : Color.blue)
                             .cornerRadius(8)
                         }
                     }
@@ -87,86 +87,87 @@ struct ServicesView: View{
                     
                     Text("Our Services")
                         .font(.system(size: 16, weight: .medium, design: .default))
-                        .foregroundColor(Color.textColor)
+                        .foregroundColor(Color.pink)
                     
                     Spacer()
                 }
-                ForEach(servicesViewModel.servicesDetalis.filter{$0.KindsOfPet.contains(where: { $0 == pressedPet})}){ service in
+                ForEach(servicesViewModel.servicesDetalis){ service in
                     
                     NavigationLink(destination: {
                         ScrollView{
                             
-                            ForEach(packageViewModel.packagesDetails.filter{$0.KindsOfPet.contains(where: { $0 == pressedPet})}){
-                                package in
-                                
-                                
-                                if service.name == "Shower" && package.typeOfPackage == "Shower" && pressedPet == .Cat && package.typeOfPet == "Cat" {
-                                    
-                                    PackageCardView(package: package , pressedPet: pressedPet)
-                                        .environmentObject(PackagesViewModel())
-                                    
-                                } else if service.name == "Grooming" && package.typeOfPackage == "Grooming"  && pressedPet == .Cat && package.typeOfPet == "Cat" {
-                                    
-                                    VStack{
-                                        PackageCardView(package: package , pressedPet: pressedPet)
-                                            .environmentObject(PackagesViewModel())
-                                        Spacer()
-                                    }
-                                    
-                                } else if service.name == "Surgeries" && package.typeOfPackage == "Surgeries" && pressedPet == .Cat && package.typeOfPet == "Cat"{
-                                    
-                                    VStack{
-                                        PackageCardView(package: package , pressedPet: pressedPet)
-                                            .environmentObject(PackagesViewModel())
-                                        Spacer()
-                                    }
-                                    
-                                } else if service.name == "Vaccination" && package.typeOfPackage == "Vaccination" && pressedPet == .Cat && package.typeOfPet == "Cat"{
-                                    
-                                    
-                                    PackageCardView(package: package , pressedPet: pressedPet)
-                                        .environmentObject(PackagesViewModel())
-                                    
-                                    
-                                    
-                                } else if service.name == "Surgeries" && package.typeOfPackage == "Surgeries" && pressedPet == .Dog && package.typeOfPet == "Dog" {
-                                    VStack{
-                                        PackageCardView(package: package , pressedPet: pressedPet)
-                                            .environmentObject(PackagesViewModel())
-                                        Spacer()
-                                    }
-                                    
-                                } else if service.name == "Shower" && package.typeOfPackage == "Shower" && pressedPet == .Dog && package.typeOfPet == "Dog" {
-                                    
-                                    PackageCardView(package: package , pressedPet: pressedPet)
-                                        .environmentObject(PackagesViewModel())
-                                    
-                                    
-                                } else if service.name == "Vaccination" && package.typeOfPackage == "Vaccination" && pressedPet == .Dog && package.typeOfPet == "Dog"{
-                                    
-                                    VStack{
-                                        
-                                        PackageCardView(package: package , pressedPet: pressedPet)
-                                            .environmentObject(PackagesViewModel())
-                                        
-                                    }
-                                    
-                                }  else if service.name == "Grooming" && package.typeOfPackage == "Grooming" && pressedPet == .Dog && package.typeOfPet == "Dog"{
-                                    
-                                    VStack{
-                                        PackageCardView(package: package , pressedPet: pressedPet)
-                                            .environmentObject(PackagesViewModel())
-                                        Spacer()
-                                    }
-                                }
-                                else if  pressedPet == .Rabbit || pressedPet == .Bird {
-                                    ComingSoonLottie(lottieFile: "coming_soon")
-                                }
-                            }
+//                            ForEach(packageViewModel.packagesDetails.filter{$0.KindsOfPet.contains(where: { $0 == pressedPet})}){
+//                                package in
+//
+//
+//                                if service.name == "Shower" && package.typeOfPackage == "Shower" && pressedPet == .Cat && package.typeOfPet == "Cat" {
+//
+//                                    PackageCardView(package: package , pressedPet: pressedPet)
+//                                        .environmentObject(PackagesViewModel())
+//
+//                                } else if service.name == "Grooming" && package.typeOfPackage == "Grooming"  && pressedPet == .Cat && package.typeOfPet == "Cat" {
+//
+//                                    VStack{
+//                                        PackageCardView(package: package , pressedPet: pressedPet)
+//                                            .environmentObject(PackagesViewModel())
+//                                        Spacer()
+//                                    }
+//
+//                                } else if service.name == "Surgeries" && package.typeOfPackage == "Surgeries" && pressedPet == .Cat && package.typeOfPet == "Cat"{
+//
+//                                    VStack{
+//                                        PackageCardView(package: package , pressedPet: pressedPet)
+//                                            .environmentObject(PackagesViewModel())
+//                                        Spacer()
+//                                    }
+//
+//                                } else if service.name == "Vaccination" && package.typeOfPackage == "Vaccination" && pressedPet == .Cat && package.typeOfPet == "Cat"{
+//
+//
+//                                    PackageCardView(package: package , pressedPet: pressedPet)
+//                                        .environmentObject(PackagesViewModel())
+//
+//
+//
+//                                } else if service.name == "Surgeries" && package.typeOfPackage == "Surgeries" && pressedPet == .Dog && package.typeOfPet == "Dog" {
+//                                    VStack{
+//                                        PackageCardView(package: package , pressedPet: pressedPet)
+//                                            .environmentObject(PackagesViewModel())
+//                                        Spacer()
+//                                    }
+//
+//                                } else if service.name == "Shower" && package.typeOfPackage == "Shower" && pressedPet == .Dog && package.typeOfPet == "Dog" {
+//
+//                                    PackageCardView(package: package , pressedPet: pressedPet)
+//                                        .environmentObject(PackagesViewModel())
+//
+//
+//                                } else if service.name == "Vaccination" && package.typeOfPackage == "Vaccination" && pressedPet == .Dog && package.typeOfPet == "Dog"{
+//
+//                                    VStack{
+//
+//                                        PackageCardView(package: package , pressedPet: pressedPet)
+//                                            .environmentObject(PackagesViewModel())
+//
+//                                    }
+//
+//                                }  else if service.name == "Grooming" && package.typeOfPackage == "Grooming" && pressedPet == .Dog && package.typeOfPet == "Dog"{
+//
+//                                    VStack{
+//                                        PackageCardView(package: package , pressedPet: pressedPet)
+//                                            .environmentObject(PackagesViewModel())
+//                                        Spacer()
+//                                    }
+//                                }
+//                                else if  pressedPet == .Rabbit || pressedPet == .Bird {
+//                                    ComingSoonLottie(lottieFile: "coming_soon")
+//                                }
+//                            }
                         }
                     }, label: {
                         
-                        ServicesViewCard(services: service)
+//                        ServicesViewCard(services: service)
+                        Text(service.name)
                     })
                     
                 }
@@ -174,16 +175,19 @@ struct ServicesView: View{
             }.padding(.horizontal)
             
         }.onAppear{
-            self.authManager.fetchCurrentUser()
-        }
+//            self.authManager.fetchCurrentUser()
+            servicesViewModel.retreiveServices{service in
+                self.servicesViewModel.servicesDetalis = service
+                
+            }        }
         
-        .navigationBarTitle("Hello \(firebasemanger.user.name)👋🏻")
+//        .navigationBarTitle("Hello \(firebasemanger.user.name)👋🏻")
         
         
         .toolbar {
             NavigationLink(destination: {
-                ProfileView(petInfo: $PetModel.NewPets)
-                    .environmentObject(FirebaseManager())
+//                ProfileView(petInfo: $PetModel.NewPets)
+//                    .environmentObject(FirebaseManager())
             }, label: {
                 Image(systemName: "person.crop.circle")
                 
@@ -208,23 +212,23 @@ struct ServicesView: View{
                 HStack(spacing: 6){
                     
                     
-                    NetworkImage(url: URL(string: package.image)) { image in
-                        image.resizable()
-                            .clipShape(RoundedRectangle(cornerRadius: 8))
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 130, height: 153.69)
-                        
-                    } placeholder: {
-                        ProgressView()
-                            .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                            .scaleEffect(1.5)
-                        
-                    } fallback: {
-                        Image(systemName: "photo")
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 140, height: 154)
-                        
-                    }
+//                    NetworkImage(url: URL(string: package.image)) { image in
+//                        image.resizable()
+//                            .clipShape(RoundedRectangle(cornerRadius: 8))
+//                            .aspectRatio(contentMode: .fit)
+//                            .frame(width: 130, height: 153.69)
+//
+//                    } placeholder: {
+//                        ProgressView()
+//                            .progressViewStyle(CircularProgressViewStyle(tint: .white))
+//                            .scaleEffect(1.5)
+//
+//                    } fallback: {
+//                        Image(systemName: "photo")
+//                            .aspectRatio(contentMode: .fit)
+//                            .frame(width: 140, height: 154)
+//
+//                    }
                     VStack(alignment: .leading ){
                         
                         if package.name == "Deep Shower" {
@@ -236,8 +240,8 @@ struct ServicesView: View{
                                 
                                 Spacer()
                                 // .frame(width: 3)
-                                StarViewLottie(lottieFile: "star")
-                                    .frame(width: 30, height: 30)
+//                                StarViewLottie(lottieFile: "star")
+//                                    .frame(width: 30, height: 30)
                                 
                             }
                         } else {
@@ -260,8 +264,8 @@ struct ServicesView: View{
 //                            PackagesCardDetalisView(sharedData: _sharedData, package: package, petInfo: PetInfo(PetName: "", GenderPets: .male, BirthDayPets: Date(), heightPet: 2, WeightPet: 2, TypePets: "", ownerId: ""), orderinfo: Order(clinicId: "", driverId: "", customerName: "", orderstats: .onTheWayToClinic, selectedDate: Date(), ownerId: userManager.user?.id ?? ""), selectedDate: Date(), selectedPets: PetInfo(PetName: "", GenderPets: .female, BirthDayPets: Date(), heightPet: 8, WeightPet: 5, TypePets: "", ownerId: ""), PresedPet: pressedPet)
 //                                .environmentObject(sharedData)
 
-                            PackagesCardDetalisView(package: package, petInfo: PetInfo(PetName: "", GenderPets: .male, BirthDayPets: Date(), heightPet: 2, WeightPet: 2, TypePets: "", ownerId: ""), PresedPet: pressedPet, orderinfo: Order(clinicId: "", driverId: "", customerName: "", orderstats: .onTheWayToClinic, selectedDate: Date(), ownerId: userManager.user?.id ?? ""), selectedDate: Date())
-                                .environmentObject(sharedData)
+//                            PackagesCardDetalisView(package: package, petInfo: PetInfo(PetName: "", GenderPets: .male, BirthDayPets: Date(), heightPet: 2, WeightPet: 2, TypePets: "", ownerId: ""), PresedPet: pressedPet, orderinfo: Order(clinicId: "", driverId: "", customerName: "", orderstats: .onTheWayToClinic, selectedDate: Date(), ownerId: userManager.user?.id ?? ""), selectedDate: Date())
+//                                .environmentObject(sharedData)
 
                         } label: {
                             HStack{
@@ -294,27 +298,7 @@ struct ServicesView: View{
             
             ZStack{
 
-                
-                NetworkImage(url: URL(string: services.servicesImage), transaction: .init(animation: .linear(duration: 0.2))) { image in
-                    image.resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 113)
-                    
-                } placeholder: {
-                    ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle(tint: .accentColor))
-                        .scaleEffect(1.5)
-                    
-                } fallback: {
-                    Image("BacgroundPackages")
-                        .resizable()
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                        .aspectRatio(contentMode: .fill)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 113)
-                }
-                
+
                 VStack{
                     
                     HStack{
@@ -334,7 +318,7 @@ struct ServicesView: View{
                     }.padding(.horizontal , 5)
                     
                 }.padding(.horizontal , 10)
-                    .foregroundColor(.white)
+                    .foregroundColor(.blue)
                     .multilineTextAlignment(.leading)
             }
         }

@@ -16,6 +16,8 @@
 		A0485E4D2907246B007E0639 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A0485E4C2907246B007E0639 /* FirebaseFirestoreSwift */; };
 		A0485E4F2907246B007E0639 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = A0485E4E2907246B007E0639 /* FirebaseMessaging */; };
 		A0485E512907246B007E0639 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A0485E502907246B007E0639 /* FirebaseStorage */; };
+		A0485E5529072DD8007E0639 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0485E5429072DD8007E0639 /* Pet.swift */; };
+		A0485E5729072F12007E0639 /* Packages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0485E5629072F12007E0639 /* Packages.swift */; };
 		A097D06F2906DFD000DE9D8E /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A097D06E2906DFD000DE9D8E /* OrderView.swift */; };
 		A0E56E122906D8130054301F /* HugPetApplications2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E112906D8130054301F /* HugPetApplications2App.swift */; };
 		A0E56E142906D8130054301F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E56E132906D8130054301F /* ContentView.swift */; };
@@ -48,6 +50,8 @@
 		A0485E3F29071FDF007E0639 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		A0485E4329072064007E0639 /* ServicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ServicesViewModel.swift; path = HugPetApplications2/ServicesViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A0485E4529072390007E0639 /* PackagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PackagesView.swift; path = ../PackagesView.swift; sourceTree = "<group>"; };
+		A0485E5429072DD8007E0639 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		A0485E5629072F12007E0639 /* Packages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Packages.swift; sourceTree = "<group>"; };
 		A097D06E2906DFD000DE9D8E /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		A0E56E0E2906D8130054301F /* HugPetApplications2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HugPetApplications2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E56E112906D8130054301F /* HugPetApplications2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPetApplications2App.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				A0485E3F29071FDF007E0639 /* Services.swift */,
+				A0485E5429072DD8007E0639 /* Pet.swift */,
+				A0485E5629072F12007E0639 /* Packages.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -333,6 +339,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0485E5729072F12007E0639 /* Packages.swift in Sources */,
+				A0485E5529072DD8007E0639 /* Pet.swift in Sources */,
 				A097D06F2906DFD000DE9D8E /* OrderView.swift in Sources */,
 				A0485E4429072064007E0639 /* ServicesViewModel.swift in Sources */,
 				A0485E4029071FDF007E0639 /* Services.swift in Sources */,
